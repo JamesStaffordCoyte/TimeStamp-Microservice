@@ -1,0 +1,13 @@
+.top {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.output p {
+  display: inline-block;
+  padding-left: 50px;
+}

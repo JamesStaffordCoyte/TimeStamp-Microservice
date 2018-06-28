@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Timestamp Microservice</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <div class="top">
+      <header>
+        <h1>Timestamp Microservice</h1>
+        <p>A Timestamp Microservice for FreeCodeCamp Api Projects</p>
+      </header>
+    </div>
+    <div class="flex-container">
+      <div class="how item">
+        <p><strong>How to use it:</strong></p>
+        <p>You can use a natural language date or a unix-timestamp to receive a timestamp and the natural date:</p>
+        <ul>
+          <li> <a href="http://localhost:3000/api/timestamp/2015-12-25">.../api/timestamp/2015-12-25</a> </li>
+          <li><a href="http://localhost:3000/api/timestamp/December 25, 2015">.../December 25, 2015</a></li>
+          <li><a href="http://localhost:3000/api/timestamp/December 25 2015">.../December 25 2015</a></li>
+          <li><a href="http://localhost:3000/api/timestamp/Dec, 25 2015">.../Dec 25, 2015</a></li>
+          <li><a href="http://localhost:3000/api/timestamp/Dec 25 2015">.../Dec 25 2015</a></li>
+          <li><a href="http://localhost:3000/api/timestamp/25 December 2015">.../25 December 2015</a></li>
+          <li><a href="http://localhost:3000/api/timestamp/25 December 15">.../25 December 15</a></li>
+          <li><a href="http://localhost:3000/api/timestamp/25 Dec 2015">.../25 Dec 2015</a></li>
+          <li><a href="http://localhost:3000/api/timestamp/25 Dec 15">.../25 Dec 15</a></li>
+          <p>Or provide a unix-timestamp (milliseconds since January 1, 1970)</p>
+          <li><a href="http://localhost:3000/api/timestamp/1451030400000">.../1451030400000</a></li>
+        </ul>
+      </div>
+
+      <div class="output item">
+
+        <p><strong>Output Example:</strong></p>
+        <br>
+        <p>{
+          <br>
+        &ensp;   unix: 1451030400000, <br>
+        &ensp;   utc: "Friday, December 25, 2015 00:00:00 GMT"
+          <br>
+        }</p>
+      </div>
+    </div>
+
+
+  </body>
+</html>
