@@ -1,5 +1,6 @@
 const express = require('express');
 
+const port = process.env.PORT || 3000;
 const app = express();
 
 const date = require('./date.js');
@@ -22,4 +23,6 @@ app.get('/api/timestamp/:date_string?', (req, res) => {
   res.json(dateObj);
 });
 
-app.listen(3000);
+app.listen(port, () => {
+  console.log(`Server is up on port ${port}`);
+});
